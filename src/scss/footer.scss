@@ -35,9 +35,9 @@
   padding-bottom: 16px;
 }
 
-.footer-line {
-  display: none;
-}
+// .footer-line {
+//   display: none;
+// }
 
 @media screen and (min-width: 1440px) {
   .footer {
@@ -73,14 +73,14 @@
     padding-bottom: 16px;
   }
 
-  .footer-line {
-    display: block;
-  }
+  // .footer-line {
+  //   display: block;
+  // }
 
-  .footer-line-item {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
+  // .footer-line-item {
+  //   display: flex;
+  //   align-items: center;
+  //   margin: 0;
+  //   padding: 0;
+  // }
 }
