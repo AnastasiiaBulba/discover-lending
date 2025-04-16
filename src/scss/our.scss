@@ -1,0 +1,88 @@
+@import './common/vars';
+
+.our-wrap {
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+}
+
+.our-wrap-title-one {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.our-wrap-title-two {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+  padding-left: 48px;
+  padding-bottom: 40px;
+}
+
+.our-wrap-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.our-text-detail {
+  width: 343px;
+  padding: 16px;
+  background: $_beige;
+}
+
+.our-text-detail-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+
+.our-text-detail-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .our-wrap {
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+  }
+
+  .our-wrap-title-one {
+    font-weight: 300;
+    font-size: 64px;
+  }
+
+  .our-wrap-title-two {
+    font-weight: 300;
+    font-size: 64px;
+    padding-bottom: 80px;
+    padding-left: 96px;
+  }
+
+  .our-wrap-text {
+    display: grid;
+    grid-template-columns: calc((100% - 32px) / 2) calc((100% - 32px) / 2);
+  }
+
+  .our-text-detail {
+    width: 544px;
+    padding: 16px 24px;
+  }
+
+  .our-text-detail-title {
+    font-size: 20px;
+  }
+
+  .our-text-detail-text {
+    font-size: 18px;
+  }
+}

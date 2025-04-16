@@ -1,0 +1,102 @@
+@import './common/vars';
+
+.is-hidden {
+  display: none;
+}
+
+.modal-cookies {
+  width: 343px;
+  height: 338px;
+  display: flex;
+  flex-direction: column;
+  background-color: $_brown;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+}
+
+.modal-cookies-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-cookies-text {
+  width: 343px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: $_black;
+  width: 279px;
+}
+
+.modal-cookies-dop-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.modal-cookies-accept,
+.modal-cookies-decline {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  all: unset;
+  cursor: pointer;
+
+  border: 1px solid $_black;
+  width: 256px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+}
+
+.modal-cookies-accept:hover,
+.modal-cookies-decline:hover {
+  background-color: $_black;
+  color: $_white;
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-cookies {
+    width: 1262px;
+    height: 119px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .modal-cookies-text-wrap {
+    margin-top: 0;
+  }
+
+  .modal-cookies-text {
+    width: 622px;
+    text-align: left;
+  }
+
+  .modal-cookies-dop-btn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .modal-cookies-accept {
+    margin-right: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .modal-cookies-decline {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}

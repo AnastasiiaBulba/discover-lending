@@ -1,0 +1,154 @@
+@import './common/vars';
+
+.core-wrap {
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+}
+
+.core-wrap-title-one {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.core-wrap-title-two {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+  padding-bottom: 40px;
+}
+
+.core-wrap-context {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dop-wrap-content-one {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dop-wrap-content-two {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.core-wrap-context-detail {
+  width: 343px;
+}
+
+.core-wrap-description {
+  padding: 16px;
+  background: $_beige;
+  height: 232px;
+}
+
+.core-wrap-description-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.core-wrap-description-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.core-wrap-description-two {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px;
+  background: $_beige;
+}
+
+.core-wrap-description-img {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 1440px) {
+  .core-wrap {
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+  }
+
+  .core-wrap-title-one {
+    font-weight: 300;
+    font-size: 64px;
+  }
+
+  .core-wrap-title-two {
+    font-weight: 300;
+    font-size: 64px;
+    padding-bottom: 80px;
+    padding-left: 96px;
+  }
+
+  .core-wrap-context {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dop-wrap-content-one {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .dop-wrap-content-two {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .core-wrap-context-detail-two {
+    width: 544px;
+  }
+
+  .core-wrap-description-two {
+    height: 156px;
+
+    padding: 0;
+  }
+
+  .core-wrap-context-detail {
+    width: 352px;
+  }
+
+  .core-wrap-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 232px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .core-wrap-description-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .core-wrap-description-text {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

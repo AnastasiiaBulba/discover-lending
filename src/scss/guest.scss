@@ -1,0 +1,138 @@
+@import './common/vars';
+
+.guest-wrap {
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+}
+
+.guest-wrap-title-one {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.guest-wrap-title-two {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+  padding-left: 57px;
+  padding-bottom: 40px;
+}
+
+.guest-wrap-img {
+  display: none;
+}
+
+.guest-carrousel {
+  width: 343px;
+  height: 323px;
+  background: $_brown-dark;
+  padding: 40px 16px;
+}
+
+.guest-carrousel-content {
+  display: none;
+}
+
+.guest-carrousel-content.active {
+  display: block;
+}
+
+.guest-carrousel-wrap-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 32px;
+  height: 163px;
+}
+
+.guest-carrousel-text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.guest-carrousel-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.guest-carrousel-wrap-btn {
+  display: flex;
+  padding-left: 183px;
+  gap: 32px;
+}
+
+.guest-carrousel-btn-left {
+  all: unset;
+  width: 48px;
+  height: 48px;
+}
+
+.guest-carrousel-btn-right {
+  all: unset;
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (min-width: 1440px) {
+  .guest-wrap {
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+  }
+
+  .guest-wrap-title-one {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1.2;
+  }
+
+  .guest-wrap-title-two {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1.2;
+    letter-spacing: -0.06em;
+    padding-bottom: 80px;
+  }
+
+  .guest-wrap-content {
+    display: flex;
+    width: 100%;
+  }
+
+  .guest-wrap-img {
+    display: block;
+    width: 544px;
+  }
+
+  .guest-carrousel {
+    width: 576px;
+    height: 319px;
+    padding: 40px 32px;
+  }
+
+  .guest-carrousel-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .guest-carrousel-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .guest-carrousel-wrap-btn {
+    padding-left: 382px;
+  }
+}

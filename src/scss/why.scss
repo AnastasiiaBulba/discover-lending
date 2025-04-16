@@ -1,0 +1,145 @@
+@import './common/vars';
+
+.why-wrap {
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+}
+
+.why-wrap-title-one {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+}
+
+.why-wrap-title-two {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+  padding-left: 58px;
+  padding-bottom: 40px;
+}
+
+.why-wrap-context {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dop-wrap-content-one {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dop-wrap-content-two {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.why-wrap-context-detail {
+  width: 343px;
+}
+
+.why-wrap-description {
+  padding: 16px;
+  background: $_beige;
+}
+
+.why-wrap-description-title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.06em;
+  padding-bottom: 24px;
+}
+
+.why-wrap-description-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.why-wrap-description-two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 16px;
+  background: $_beige;
+}
+
+@media screen and (min-width: 1440px) {
+  .why-wrap {
+    padding-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 80px;
+  }
+
+  .why-wrap-title-one {
+    font-weight: 300;
+    font-size: 64px;
+  }
+
+  .why-wrap-title-two {
+    font-weight: 300;
+    font-size: 64px;
+    padding-bottom: 80px;
+    padding-left: 96px;
+  }
+
+  .why-wrap-context {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .dop-wrap-content-one {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .dop-wrap-content-two {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .why-wrap-context-detail-two {
+    width: 544px;
+  }
+
+  .why-wrap-description-two {
+    height: 156px;
+  }
+
+  .why-wrap-context-detail {
+    width: 352px;
+  }
+
+  .why-wrap-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 207px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+  }
+
+  .why-wrap-description-title {
+    font-weight: 300;
+    font-size: 32px;
+  }
+
+  .why-wrap-description-text {
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

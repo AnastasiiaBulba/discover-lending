@@ -1,0 +1,77 @@
+@import './common/vars';
+
+.is-hidden {
+  background: none;
+  display: none;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background: $_brown;
+  width: 375px;
+  height: 448px;
+  display: flex;
+  text-align: center;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-left: 16px;
+  position: relative;
+  z-index: 1000;
+}
+
+.modal-header-logo {
+  width: 44px;
+  height: 44px;
+}
+
+.back-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-nav {
+  margin-bottom: 40px;
+}
+
+.modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding-top: 30px;
+}
+
+.modal-nav-link {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.footer-modal-nav-link {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+}
