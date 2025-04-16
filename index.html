@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="../img/favicon/favicon500.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMgSURBVHgBrVZNVhNBEK7uCfpcJUH3dMKP7ohLV4QTACuXkhMIJ1BOAJxAWLoinIB4AsNSQzLNjpWOOyROl191MnlBBtLDs/JeZnqmq7/6/WoUBYiB6Kd6k5jWmNho1onTjrTT5PBTpLqO3am9sJ1ZZ6kHgZZMUyn1Qe4BdExDaltrk7x9WulN7Fll5r0Q4HzAZbMt3uUB5D3374yp0P+W2nLtrL5SP6FHSEQFRbyOKDrH7bPy8/JV8iO5KqKvqaBEKtpIh2kHxdIFcIMKSmFAp1wFhWNRRZYVGyooHtCMpFCyI44qqPEkdH9WZB5QzangApDeE2HNTZe6boiOOKOf6H1vKIqggR4ycT/+HKJcfVGtlatlgs7b+CLeC9FJkuS6Ol99U54vX5ekYZ1zxxQo7sYdSESQP0sFBEzU1lo3NZhhjf7QJDSzcilMo1idhuTvFjkAA0zUUIsriyf97/2tDEysB50lOPCL++3aviKnD1k0m8i8lchguQCPd8UIn6enehvUugpuNWOOtW44ei+6tZe1MyWsEffi9TvW4WAVKSHsBU36uN/rH2XcykPe8iCyR6v3eGZxukRGjDzK41sPuFL7WhpvvBu6vm3j0javjOGUd0BlP7FO4NHryYHwFP8VGPUL16aE+j4wvx1TppSXC5/HOTKSZIBtsMyKlFviMcIm02NXDFGp2oe367GNE6wPKKWmREw8RsucYt2ZNgCFlvgcpjdpK8vDJIdMl0Jf/46k+lJ9B0auDnqDluzPHVfSamKsg7FZ+LOzEaqPaItOkRlWX64fIJw8+DbYDdXxM1PaQsDGFRcuCpPfcUMOCVUB2Dvfi94zRQuhXOqLiPhSJnuooV6HuWF7tuuJEV4e+h4KkGgYNZBjnwL5pAjRkWJCax3KbUn+xvnrhOhyxA1U4Ghv4HCDZ0fZfeF5OC3ou+Dx9GhAJN5i6ptxwRQGLFFRQV+6OXeCqrNFpkwmD3qY95nop4UahTKvd2dV+ywPu2CHTyCHW1QFPm3dAiiRMMsaltvYJ2TQvu9ARQEifQTiHX3qK554MPWpfy5NHcJWfwH+nqoWR2GewwAAAABJRU5ErkJggg=="
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Light Luck Quest</title>
+    <script type="module" crossorigin src="/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-0d4ab8a2.js">
+    <link rel="stylesheet" href="/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/assets/styles-7c204934.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+  <div class="header-wrapper">
+    <img
+      width="44"
+      height="44"
+      src="../img/favicon/favicon500.png"
+      alt="Logo"
+      class="header-logo"
+    />
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About Light Luck Quest</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#our" class="nav-link">Our Retreat Programs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#why" class="nav-link">Why Choose Us?</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#guest" class="nav-link">Guest Testimonials</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#core" class="nav-link">Core Mindfulness Principles</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="header-burger" data-modal-open>
+      <img
+        width="44"
+        height="44"
+        src="../img/burger.png"
+        alt="Burger button"
+        class="header-burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+      <div id="modal" class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <div class="modal-header">
+      <img
+        class="modal-header-logo"
+        src="../img/favicon/favicon500.png"
+        alt="Logo image"
+      />
+      <button type="button" class="back-button is-hidden" data-modal-close>
+        <img
+          width="44"
+          height="44"
+          src="../img/burger.png"
+          alt="burger-button"
+          class="back-img"
+        />
+      </button>
+    </div>
+
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="/" class="modal-nav-link">Home</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#about" class="modal-nav-link">About Light Luck Quest</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#our" class="modal-nav-link">Our Retreat Programs</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#why" class="modal-nav-link">Why Choose Us?</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#guest" class="modal-nav-link">Guest Testimonials</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#core" class="modal-nav-link">Core Mindfulness Principles</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      <section class="hero">
+  <div class="hero-wrapper-dop">
+    <div class="hero-wrapper">
+      <h2 class="hero-title-one">Discover Balance,</h2>
+      <h2 class="hero-title-two">Embrace Serenity</h2>
+      <p class="hero-text">
+        A transformative retreat experience designed to reconnect you with inner
+        peace, mindfulness, and personal growth
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section id="about" class="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-wrap-text">
+        <h3 class="about-wrap-title-one">About</h3>
+        <h3 class="about-wrap-title-two">Light Luck Quest</h3>
+        <p class="about-wrap-text-p">
+          At Light Luck Quest, we believe in the power of mindfulness,
+          self-reflection, and holistic well-being. Our retreat is a, sanctuary
+          designed to help individuals disconnect from stress, refocus their
+          minds, and embark on a journey of inner discovery.
+        </p>
+        <p class="about-wrap-text-p">
+          Nestled in the peaceful surroundings of Konya, our retreat center
+          offers a blend of guided meditation, yoga, nature therapy, and
+          transformative workshops to help you cultivate clarity, resilience,
+          and personal fulfillment.
+        </p>
+      </div>
+      <div class="about-img-wrap">
+        <picture class="about-img">
+          <source
+            srcset="
+              ../img/about/about-desk-1x.png 1x,
+              ../img/about/about-desk-1x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ../img/about/about-mob-1x.png 1x,
+              ../img/about/about-mob-1x.png 2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <img
+            src="../img/about/about-mob-1x.png"
+            alt="Image about light luck quest"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+      <section id="our" class="our">
+  <div class="container">
+    <div class="our-wrap">
+      <div class="our-wrap-title">
+        <h3 class="our-wrap-title-one">Our</h3>
+        <h3 class="our-wrap-title-two">Retreat Programs</h3>
+      </div>
+      <div class="our-wrap-text">
+        <div class="our-text-detail">
+          <p class="our-text-detail-title">Mindfulness & Meditation Retreat</p>
+          <p class="our-text-detail-text">
+            A rejuvenating experience that introduces meditation techniques,
+            breathing exercises, and guided visualization to promote mental
+            clarity and emotional balance.
+          </p>
+        </div>
+        <div class="our-text-detail">
+          <p class="our-text-detail-title">Yoga & Body Awareness Retreat</p>
+          <p class="our-text-detail-text">
+            Designed for those looking to harmonize mind and body through
+            mindful movement, stretching, and deep relaxation practices.
+          </p>
+        </div>
+        <div class="our-text-detail">
+          <p class="our-text-detail-title">Nature Healing & Digital Detox</p>
+          <p class="our-text-detail-text">
+            Step away from technology and reconnect with nature. This program
+            includes forest bathing, hiking, and mindful outdoor activities to
+            rejuvenate the soul.
+          </p>
+        </div>
+        <div class="our-text-detail">
+          <p class="our-text-detail-title">
+            Personal Growth & Self-Discovery Workshop
+          </p>
+          <p class="our-text-detail-text">
+            A deep exploration into self-awareness, personal aspirations, and
+            goal-setting. Perfect for those seeking direction, purpose, and
+            emotional resilience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+      <section id="why" class="why">
+  <div class="container">
+    <div class="why-wrap">
+      <div class="why-wrap-title">
+        <h3 class="why-wrap-title-one">Why</h3>
+        <h3 class="why-wrap-title-two">Choose Us?</h3>
+      </div>
+      <div class="why-wrap-context">
+        <div class="dop-wrap-content-one">
+          <div class="why-wrap-context-detail">
+            <picture class="why-img">
+              <source
+                srcset="
+                  ../img/why/why-desk-1-1x.png 1x,
+                  ../img/why/why-desk-1-2x.png 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/why/why-mob-1-1x.png 1x,
+                  ../img/why/why-mob-1-2x.png 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img
+                src="../img/why/why-mob-1-1x.png"
+                alt="Image Why Choose Us"
+              />
+            </picture>
+            <div class="why-wrap-description">
+              <p class="why-wrap-description-title">Expert Instructors</p>
+              <p class="why-wrap-description-text">
+                Learn from experienced mindfulness coaches, yoga practitioners,
+                and wellness guides.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-wrap-context-detail">
+            <picture class="why-img">
+              <source
+                srcset="
+                  ../img/why/why-desk-2-1x.png 1x,
+                  ../img/why/why-desk-2-2x.png 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/why/why-mob-2-1x.png 1x,
+                  ../img/why/why-mob-2-2x.png 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img
+                src="../img/why/why-mob-2-1x.png"
+                alt="Image Why Choose Us"
+              />
+            </picture>
+            <div class="why-wrap-description">
+              <p class="why-wrap-description-title">Tranquil Environment</p>
+              <p class="why-wrap-description-text">
+                Escape the chaos of daily life in a peaceful and rejuvenating
+                setting.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-wrap-context-detail">
+            <picture class="why-img">
+              <source
+                srcset="
+                  ../img/why/why-desk-3-1x.png 1x,
+                  ../img/why/why-desk-3-2x.png 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/why/why-mob-3-1x.png 1x,
+                  ../img/why/why-mob-3-2x.png 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img
+                src="../img/why/why-mob-3-1x.png"
+                alt="Image Why Choose Us"
+              />
+            </picture>
+            <div class="why-wrap-description">
+              <p class="why-wrap-description-title">Holistic Approach</p>
+              <p class="why-wrap-description-text">
+                Experience a combination of physical, mental, and emotional
+                well-being practices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dop-wrap-content-two">
+          <div class="why-wrap-context-detail-two">
+            <picture class="why-img">
+              <source
+                srcset="
+                  ../img/why/why-desk-4-1x.png 1x,
+                  ../img/why/why-desk-4-2x.png 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/why/why-mob-4-1x.png 1x,
+                  ../img/why/why-mob-4-2x.png 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img
+                src="../img/why/why-mob-4-1x.png"
+                alt="Image Why Choose Us"
+              />
+            </picture>
+            <div class="why-wrap-description-two">
+              <p class="why-wrap-description-title">
+                Small, Personalized Groups
+              </p>
+              <p class="why-wrap-description-text-two">
+                Enjoy an intimate retreat setting for deeper connection and
+                personalized guidance.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-wrap-context-detail-two">
+            <picture class="why-img">
+              <source
+                srcset="
+                  ../img/why/why-desk-5-1x.png 1x,
+                  ../img/why/why-desk-5-2x.png 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="
+                  ../img/why/why-mob-5-1x.png 1x,
+                  ../img/why/why-mob-5-2x.png 2x
+                "
+                media="(max-width: 1439px)"
+              />
+              <img
+                src="../img/why/why-mob-5-1x.png"
+                alt="Image Why Choose Us"
+              />
+            </picture>
+            <div class="why-wrap-description-two">
+              <p class="why-wrap-description-title">Lasting Transformation</p>
+              <p class="why-wrap-description-text">
+                Gain practical tools and insights to maintain mindfulness in
+                everyday life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+      <section id="guest" class="guest">
+  <div class="container">
+    <div class="guest-wrap">
+      <h3 class="guest-wrap-title-one">Guest</h3>
+      <h3 class="guest-wrap-title-two">Testimonials</h3>
+
+      <div class="guest-wrap-content">
+        <picture class="guest-wrap-img">
+          <source
+            srcset="
+              ../img/guest/guest-desk-1x.png 1x,
+              ../img/guest/guest-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="../img/guest/guest-desk-1x.png"
+            alt="Image guest testimonials"
+          />
+        </picture>
+        <div class="guest-carrousel">
+          <div class="guest-carrousel-content">
+            <div class="guest-carrousel-wrap-text">
+              <p class="guest-carrousel-text">
+                "Light Luck Quest was exactly what I needed. I left feeling
+                refreshed, focused, and more connected to myself than ever
+                before."
+              </p>
+              <p class="guest-carrousel-name">Elena K.</p>
+            </div>
+          </div>
+
+          <div class="guest-carrousel-content">
+            <div class="guest-carrousel-wrap-text">
+              <p class="guest-carrousel-text">
+                "The retreat helped me find inner peace and regain control over
+                my thoughts. The guided meditations were life-changing."
+              </p>
+              <p class="guest-carrousel-name">Omar Y.</p>
+            </div>
+          </div>
+
+          <div class="guest-carrousel-content">
+            <div class="guest-carrousel-wrap-text">
+              <p class="guest-carrousel-text">
+                "I never realized how much I needed a digital detox. The time
+                spent in nature helped me reset my mind and priorities."
+              </p>
+              <p class="guest-carrousel-name">Sofia M.</p>
+            </div>
+          </div>
+
+          <div class="guest-carrousel-wrap-btn">
+            <button class="guest-carrousel-btn-left">
+              <img
+                class="img-btn-left"
+                src="../img/left.png"
+                alt="Button left"
+              />
+            </button>
+            <button class="guest-carrousel-btn-right">
+              <img
+                class="img-btn-right"
+                src="../img/right.png"
+                alt="Button right"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+      <section id="core" class="core">
+  <div class="container">
+    <div class="core-wrap">
+      <div class="core-wrap-title">
+        <h3 class="core-wrap-title-one">Core</h3>
+        <h3 class="core-wrap-title-two">Mindfulness Principles</h3>
+      </div>
+      <div class="core-wrap-context">
+        <div class="dop-wrap-content-one">
+          <div class="core-wrap-context-detail">
+            <div class="core-wrap-description">
+              <div class="core-wrap-description-two">
+                <img
+                  class="core-wrap-description-img"
+                  src="../img/core/mandala-1.png"
+                  alt="Image mandala"
+                />
+                <p class="core-wrap-description-title">Presence & Awareness</p>
+              </div>
+              <p class="core-wrap-description-text">
+                Learn to live fully in the moment, embracing each experience
+                without distraction.
+              </p>
+            </div>
+          </div>
+
+          <div class="core-wrap-context-detail">
+            <div class="core-wrap-description">
+              <div class="core-wrap-description-two">
+                <img
+                  class="core-wrap-description-img"
+                  src="../img/core/mandala-2.png"
+                  alt="Image mandala"
+                />
+                <p class="core-wrap-description-title">Breath & Movement</p>
+              </div>
+              <p class="core-wrap-description-text">
+                Harness the power of breath and mindful movement to enhance
+                physical and mental well-being.
+              </p>
+            </div>
+          </div>
+
+          <div class="core-wrap-context-detail">
+            <div class="core-wrap-description">
+              <div class="core-wrap-description-two">
+                <img
+                  class="core-wrap-description-img"
+                  src="../img/core/mandala-3.png"
+                  alt="Image mandala"
+                />
+                <p class="core-wrap-description-title">
+                  Connection with Nature
+                </p>
+              </div>
+              <p class="core-wrap-description-text">
+                Experience the healing benefits of nature and learn to
+                incorporate natural elements into daily mindfulness practices.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dop-wrap-content-two">
+          <div class="core-wrap-context-detail-two">
+            <div class="core-wrap-description">
+              <div class="why-wrap-description-two">
+                <img
+                  class="core-wrap-description-img"
+                  src="../img/core/mandala-4.png"
+                  alt="Image mandala"
+                />
+                <p class="core-wrap-description-title">
+                  Emotional Balance & Clarity
+                </p>
+              </div>
+              <p class="core-wrap-description-text">
+                Develop emotional intelligence and self-awareness to navigate
+                challenges with calm and confidence.
+              </p>
+            </div>
+          </div>
+
+          <div class="core-wrap-context-detail-two">
+            <div class="core-wrap-description">
+              <div class="core-wrap-description-two">
+                <img
+                  class="core-wrap-description-img"
+                  src="../img/core/mandala-5.png"
+                  alt="Image mandala"
+                />
+                <p class="core-wrap-description-title">
+                  Gratitude & Positivity
+                </p>
+              </div>
+              <p class="core-wrap-description-text">
+                Cultivate an attitude of gratitude, shifting your focus to the
+                positive aspects of life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+      <section id="join" class="join">
+  <div class="container">
+    <div class="join-wrap">
+      <div class="join-wrap-text">
+        <h3 class="join-wrap-title-one">Join</h3>
+        <h3 class="join-wrap-title-two">the Journey</h3>
+        <p class="join-wrap-text-p">
+          Are you ready to embrace mindfulness, reduce stress, and embark on a
+          path of personal transformation?
+        </p>
+        <p class="join-wrap-text-p">
+          Begin your journey with Light Luck Quest today!
+        </p>
+        <p class="join-wrap-text-p-two">
+          Contact us:
+          <a class="join-mail" href="mailto:info@lightluckquest.com"
+            >info@lightluckquest.com.</a
+          >
+        </p>
+      </div>
+      <div class="join-img-wrap">
+        <picture class="join-img">
+          <source
+            srcset="
+              ../img/join/join-desk-1x.png 1x,
+              ../img/join/join-desk-2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="../img/join/join-desk-1x.png"
+            alt="Image join the journey"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div id="modal-cookies" class="backdrop" data-backdrop>
+  <div class="modal-cookies">
+    <div class="modal-cookies-text-wrap">
+      <p class="modal-cookies-text">
+        We use cookies to improve your experience on our website. By browsing
+        this website, you agree to our use of cookies.
+      </p>
+    </div>
+    <div class="modal-cookies-dop-btn">
+      <button type="button" class="modal-cookies-accept">Accept Cookies</button>
+      <button type="button" class="modal-cookies-decline">
+        Decline Cookies
+      </button>
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+  <div class="footer-wrap">
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a href="./privacy-policy.html" class="footer-nav-link"
+          >Privacy policy</a
+        >
+      </li>
+
+      <img
+        width="2"
+        height="27"
+        src="../img/footer-line.png"
+        alt="Line image"
+        class="footer-line"
+      />
+
+      <li class="footer-nav-item">
+        <a href="./terms.html" class="footer-nav-link">Terms and Conditions</a>
+      </li>
+
+      <img
+        width="2"
+        height="27"
+        src="../img/footer-line.png"
+        alt="Line image"
+        class="footer-line"
+      />
+
+      <li class="footer-nav-item">
+        <a href="./cookies.html" class="footer-nav-link">Cookies Policy</a>
+      </li>
+    </ul>
+
+    <p class="footer-text">All rights reserved lightluckquest.com | 2025</p>
+  </div>
+</footer>
+
+    </div>
+
+    
+    
+    
+    
+  </body>
+</html>
