@@ -35,9 +35,9 @@
   padding-bottom: 16px;
 }
 
-// .footer-line {
-//   display: none;
-// }
+.footer-nav-img {
+  display: none;
+}
 
 @media screen and (min-width: 1440px) {
   .footer {
@@ -73,9 +73,9 @@
     padding-bottom: 16px;
   }
 
-  // .footer-line {
-  //   display: block;
-  // }
+  .footer-nav-img {
+    display: block;
+  }
 
   // .footer-line-item {
   //   display: flex;
